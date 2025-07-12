@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hospital Management System</h1>
+
+  <!-- Hospital Admin Registration -->
+  <section id="admin-registration">
+    <h2>Register Hospital</h2>
+    <input type="text" placeholder="Hospital Name" id="hospital-name">
+    <input type="text" placeholder="Location" id="hospital-location">
+    <button onclick="registerHospital()">Register Hospital</button>
+  </section>
+
+  <!-- Doctor Registration -->
+  <section id="doctor-registration">
+    <h2>Register Doctor</h2>
+    <input type="text" placeholder="Doctor Name" id="doctor-name">
+    <input type="text" placeholder="Qualifications" id="doctor-qualifications">
+    <input type="text" placeholder="Specializations (comma-separated)" id="doctor-specializations">
+    <input type="number" placeholder="Experience (years)" id="doctor-experience">
+    <select id="hospital-select"></select>
+    <input type="number" placeholder="Consultation Fee" id="consultation-fee">
+    <button onclick="registerDoctor()">Register Doctor</button>
+  </section>
+
+  <!-- Patient Registration -->
+  <section id="patient-registration">
+    <h2>Register Patient</h2>
+    <input type="text" placeholder="Name" id="patient-name">
+    <input type="text" placeholder="Gender" id="patient-gender">
+    <input type="date" placeholder="DOB" id="patient-dob">
+    <input type="text" placeholder="Unique ID" id="patient-id">
+    <button onclick="registerPatient()">Register Patient</button>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking">
+    <h2>Book Appointment</h2>
+    <select id="patient-select"></select>
+    <select id="doctor-select"></select>
+    <input type="datetime-local" id="booking-time">
+    <input type="number" placeholder="Enter Fee" id="booking-fee">
+    <button onclick="bookAppointment()">Book</button>
+  </section>
+
+  <!-- Dashboards -->
+  <section id="dashboard">
+    <h2>Dashboards</h2>
+    <button onclick="showHospitalDashboard()">Hospital Admin Dashboard</button>
+    <button onclick="showDoctorDashboard()">Doctor Dashboard</button>
+    <button onclick="showPatientHistory()">Patient History</button>
+    <div id="report-output"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

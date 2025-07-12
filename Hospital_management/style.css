@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}
+input, select, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+#report-output {
+  background-color: #eef;
+  padding: 10px;
+  border: 1px solid #999;
+  margin-top: 15px;
+}
